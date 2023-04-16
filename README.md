@@ -4,9 +4,9 @@ rate limiter Limiter is a customizable rate limiter for Go applications that all
 
 ## Features
 
-- Customizable threshold: Set the maximum number of requests allowed within a specified duration.
-- Customizable duration: Set the time duration within which the threshold is applied.
-- Reset: Reset the rate limiter's internal state.
+- ```Customizable threshold```: Set the maximum number of requests allowed within a specified duration.
+- ```Customizable duration```: Set the time duration within which the threshold is applied.
+- ```Reset```: Reset the rate limiter's internal state.
 
 ## Installation
 
