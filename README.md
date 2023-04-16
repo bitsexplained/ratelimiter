@@ -80,4 +80,4 @@ Contributions to this library is welcomed! If you find a bug, have a feature req
 
 ## License
 rate limiter library is released under the MIT License.
-See  [LICENSE-MIT](LICENSE-MIT) for details.
+See  [LICENSE-MIT](LICENSE) for details.
