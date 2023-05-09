@@ -13,7 +13,7 @@ rate limiter Limiter is a customizable rate limiter for Go applications that all
 To use rate limiter Limiter in your Go project, simply import it into your code:
 
 ```go
-import "github.com/muathendirangu/ratelimiter"
+import "github.com/bitsexplained/ratelimiter"
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ import "github.com/muathendirangu/ratelimiter"
 
    import (
       "fmt"
-      "github.com/muathendirangu/ratelimiter"
+      "github.com/bitsexplained/ratelimiter"
       "time"
    )
 
