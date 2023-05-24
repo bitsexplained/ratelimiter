@@ -10,10 +10,10 @@ rate limiter Limiter is a customizable rate limiter for Go applications that all
 
 ## Installation
 
-To use rate limiter Limiter in your Go project, simply import it into your code:
+To install rate limiter package in your Go project, simply run the following command from your terminal:
 
 ```go
-import "github.com/bitsexplained/ratelimiter"
+go get github.com/bitsexplained/ratelimiter
 ```
 
 ## Usage
