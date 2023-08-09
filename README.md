@@ -1,4 +1,4 @@
-# rate limiter Limiter
+# rate limiter
 
 rate limiter Limiter is a customizable rate limiter for Go applications that allows you to limit the rate of incoming requests based on a threshold and duration.
 
