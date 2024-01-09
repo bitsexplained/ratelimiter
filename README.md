@@ -1,23 +1,24 @@
-# rate limiter
+# Rate Limiter
+## A customizable rate limiter for Go applications
 
-rate limiter Limiter is a customizable rate limiter for Go applications that allows you to limit the rate of incoming requests based on a threshold and duration.
+Rate Limiter empowers you to control the rate of incoming requests in your Go applications, safeguarding against excessive traffic and potential overload. It offers a flexible configuration to tailor its behavior to your specific needs.
 
-## Features
+## Key features
 
-- ```Customizable threshold```: Set the maximum number of requests allowed within a specified duration.
-- ```Customizable duration```: Set the time duration within which the threshold is applied.
-- ```Reset```: Reset the rate limiter's internal state.
+- ```Customizable threshold```: Define the maximum number of requests permitted within a specified duration.
+- ```Customizable duration```: Set the time window within which the threshold is applied.
+- ```Reset```: Clear the rate limiter's internal state, enabling a fresh start.
 
 ## Installation
 
-To install rate limiter package in your Go project, simply run the following command from your terminal:
+To integrate Rate Limiter into your project, execute the following command in your terminal:
 
 ```go
 go get github.com/bitsexplained/ratelimiter
 ```
 
 ## Usage
-- Here's an example of how you can use rate limiter in your Go application:
+- Here's a practical example showcasing Rate Limiter's usage:
 
 ```go
    package main
@@ -47,36 +48,37 @@ go get github.com/bitsexplained/ratelimiter
 ```
 
 ## Public Interface
-rate limiter provides the following public interface:
+Rate Limiter exposes two essential methods for interaction:
 
-- ```go Allow() bool```: Check if a request is allowed based on the rate limiter's threshold and duration.
-- ```Reset() ```: Reset the rate limiter's internal state.
+- ```go Allow() bool```: Determines whether a request is permissible based on the configured threshold and duration.
+
+- ```Reset() ```: Clears the rate limiter's internal state, effectively starting anew.
 
 ## Configuration
-- rate limiter provides the following configuration options:
+- Customize Rate Limiter's behavior using these configuration options:
 
-- ```WithThreshold(threshold int)```: Set the threshold for the rate limiter.
-- ```WithDuration(duration time.Duration)```: Set the duration for the rate limiter.
+- ```WithThreshold(threshold int)```: Sets the maximum allowable requests within the specified duration.
+- ```WithDuration(duration time.Duration)```: Establishes the time window for applying the threshold.
 
 
 ## Initializing the Rate Limiter
-You can initialize the rate limiter using the ```NewRateLimiter``` function and chaining the configuration options:
+Construct a Rate Limiter instance using the ```NewRateLimiter``` function, seamlessly chaining configuration options:
 
 ```go
    rl := ratelimiter.NewRateLimiter(
-	ratelimiter.WithThreshold(500),
-	ratelimiter.WithDuration(time.Second),
-)
+  		ratelimiter.WithThreshold(500),
+  		ratelimiter.WithDuration(time.Second),
+	)
 ```
 
 ## Resetting the Rate Limiter
-You can reset the rate limiter's internal state using the ```Reset()``` method:
+To clear the rate limiter's internal state, employ the Reset() method:
 
 ```go
    rl.Reset()
 ```
 ## Contributing
-Contributions to this library is welcomed! If you find a bug, have a feature request, or want to contribute code, please open an issue or submit a pull request to the GitHub repository.
+Your contributions to Rate Limiter are warmly welcomed! If you encounter bugs, have feature requests, or wish to contribute code, please create an issue or submit a pull request to the GitHub repository.
 
 ## License
 rate limiter library is released under the MIT License.
